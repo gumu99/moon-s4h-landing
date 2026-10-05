@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="theme-color" content="#050A18">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#050A18">
+<meta name="color-scheme" content="dark">
+<title>Moon.com × S4H — $100 Sign-Up Bonus</title>
+<meta name="description" content="Join Moon.com with code S4H and unlock available bonuses and rewards — $100 sign-up bonus, double level-up and weekly perks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"></noscript>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Moon.com × S4H — $100 Sign-Up Bonus">
+<meta property="og:description" content="Join Moon.com with code S4H and unlock available bonuses and rewards.">
+<meta name="twitter:card" content="summary_large_image">
+<script>document.documentElement.classList.add("intro")</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='18' y1='92' x2='88' y2='4' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23A855F7'/%3E%3Cstop offset='.55' stop-color='%234F46E5'/%3E%3Cstop offset='1' stop-color='%2322D3EE'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg transform='translate(50 50) scale(0.74 1) translate(-50 -50)'%3E%3Cpath d='M88 3Q46 14 8 39Q1.5 46 8 53Q46 78 40 84L47.5 61L47.5 53L41.5 45Z' fill='url(%23g)'/%3E%3Cpath d='M88 3Q46 14 8 39Q1.5 46 8 53Q46 78 40 84L47.5 61L47.5 53L41.5 45Z' transform='rotate(180 50 50) translate(3.5 3.5) scale(0.93)' fill='url(%23g)'/%3E%3C/g%3E%3C/svg%3E">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#050A18;--surface:rgba(139,92,246,.08);--line:rgba(124,58,237,.16);
+  --gold1:#8B5CF6;--gold2:#C4B5FD;--gold3:#DDD6FE;
+  --text:#E8EAF8;--muted:#9BA4C6;--green:#22D3EE;--red:#C084FC;
+  --mint:#1E1B4B;--paper:#0B1024;
+  --font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+html{scroll-behavior:smooth;overflow-x:clip;color-scheme:dark}
+body{overflow-x:clip}
+body{background:var(--bg);background-image:linear-gradient(180deg,#0A0F26 0%,var(--bg) 30%,#02030C 100%);color:var(--text);font-family:var(--font);font-size:17px;line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+::selection{background:rgba(124,58,237,.22);color:#DDD6FE}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:#0B1024}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#8B5CF6,#DDD6FE);border-radius:8px;border:2px solid #0B1024}
+a{color:inherit;text-decoration:none}
+img,svg{display:block}
+body::after{content:"";position:fixed;inset:0;z-index:2;pointer-events:none;opacity:.03;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* loader */
+#loader{position:fixed;inset:0;z-index:200;background:var(--bg);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:20px;transition:opacity .7s,visibility .7s}
+#loader.done{opacity:0;visibility:hidden}
+
+@keyframes shine{to{background-position:200% center}}
+
+/* progress */
+#progress{position:fixed;top:0;left:0;height:3px;width:100%;z-index:120}
+#progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,#DDD6FE,#C4B5FD,#A78BFA);box-shadow:0 0 12px rgba(124,58,237,.5)}
+
+/* ambient */
+#particles{position:fixed;inset:0;z-index:0;pointer-events:none}
+.aurora{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.55}
+.orb-1{width:520px;height:520px;top:-180px;left:-140px;background:radial-gradient(circle,rgba(139,92,246,.18),transparent 65%);animation:drift1 22s ease-in-out infinite alternate}
+.orb-2{width:640px;height:640px;bottom:-260px;right:-200px;background:radial-gradient(circle,rgba(124,58,237,.12),transparent 65%);animation:drift2 26s ease-in-out infinite alternate}
+@keyframes drift1{to{transform:translate(70px,50px) scale(1.15)}}
+@keyframes drift2{to{transform:translate(-60px,-40px) scale(1.1)}}
+#doodles{position:fixed;inset:0;z-index:0;pointer-events:none;background-size:520px 520px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='520' height='520' viewBox='0 0 520 520'%3E%3Cg fill='none' stroke='%2379a298' stroke-opacity='.3' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg transform='translate(30,26) scale(2) rotate(-4 12 12)'%3E%3Crect x='6' y='7' width='12' height='14' rx='3'/%3E%3Cpath d='M8 7V5h8v2'/%3E%3Ccircle cx='12' cy='14' r='2.6'/%3E%3C/g%3E%3Cg transform='translate(175,18) scale(1.8) rotate(6 12 12)'%3E%3Cellipse cx='12' cy='6.5' rx='7' ry='2.8'/%3E%3Cpath d='M5 6.5v5c0 1.6 3.1 2.8 7 2.8s7-1.2 7-2.8v-5'/%3E%3Cpath d='M5 11.5v5c0 1.6 3.1 2.8 7 2.8s7-1.2 7-2.8v-5'/%3E%3C/g%3E%3Cg transform='translate(300,34) scale(2) rotate(-3 12 12)'%3E%3Crect x='3' y='6' width='18' height='12' rx='2'/%3E%3Ccircle cx='12' cy='12' r='2.6'/%3E%3Cpath d='M6.5 9.5v5M17.5 9.5v5'/%3E%3C/g%3E%3Cg transform='translate(425,24) scale(1.7)'%3E%3Crect x='4' y='4' width='16' height='16' rx='2'/%3E%3Cpath d='M8.5 16v-4M12 16v-7M15.5 16v-2.5'/%3E%3C/g%3E%3Cg transform='translate(36,150) scale(1.9) rotate(5 12 12)'%3E%3Ccircle cx='12' cy='6.5' r='2.8'/%3E%3Cpath d='M4 15c3-2 6-2 9-.5l3.5 1.8c1.2.7.8 2.7-.7 2.7H10c-2.2 0-4.3-1-6-2.6z'/%3E%3C/g%3E%3Cg transform='translate(300,140) scale(2.1) rotate(-6 12 12)'%3E%3Ccircle cx='12' cy='12' r='8'/%3E%3Ccircle cx='12' cy='12' r='4.6'/%3E%3Ccircle cx='12' cy='12' r='1.4'/%3E%3Cpath d='M12 12l6.5-6.5M18.5 5.5h-3M18.5 5.5v3'/%3E%3C/g%3E%3Cg transform='translate(165,165) scale(1.6)'%3E%3Cpath d='M4 19V5'/%3E%3Cpath d='M4 19h16'/%3E%3Cpath d='M7 15l3.5-4 3 2.5L18 8'/%3E%3Cpath d='M15 8h3v3'/%3E%3C/g%3E%3Cg transform='translate(425,155) scale(1.9) rotate(6 12 12)'%3E%3Cpath d='M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z'/%3E%3Cpath d='M9 12l2.2 2.2L15.5 10'/%3E%3C/g%3E%3Cg transform='translate(55,285) scale(1.8)'%3E%3Ccircle cx='9.5' cy='12' r='5.5'/%3E%3Ccircle cx='14.5' cy='12' r='5.5'/%3E%3C/g%3E%3Cg transform='translate(175,300) scale(2) rotate(-4 12 12)'%3E%3Crect x='3' y='7' width='18' height='13' rx='3'/%3E%3Cpath d='M16 12.5h5v4h-5a2 2 0 0 1 0-4z'/%3E%3C/g%3E%3Cg transform='translate(325,300) scale(1.5)'%3E%3Ccircle cx='12' cy='12' r='7.5'/%3E%3Ccircle cx='12' cy='12' r='4.8'/%3E%3Cpath d='M12 4.5v3M12 16.5v3'/%3E%3C/g%3E%3Cg transform='translate(435,315) scale(1.6) rotate(8 12 12)'%3E%3Cpath d='M4 17l4-5 3.5 3L20 6'/%3E%3Cpath d='M16 6h4v4'/%3E%3C/g%3E%3Cg transform='translate(28,400) scale(1.9) rotate(5 12 12)'%3E%3Crect x='6' y='3.5' width='12' height='17' rx='2'/%3E%3Crect x='8.5' y='6' width='7' height='3' rx='.8'/%3E%3Cpath d='M9 12h.01M12 12h.01M15 12h.01M9 15h.01M12 15h.01M15 15h.01M9 18h.01M12 18h.01M15 18h.01'/%3E%3C/g%3E%3Cg transform='translate(160,430) scale(1.7) rotate(-6 12 12)'%3E%3Crect x='3' y='6' width='18' height='12' rx='2'/%3E%3Cpath d='M3 10h18'/%3E%3Cpath d='M6.5 14.5h4'/%3E%3C/g%3E%3Cg transform='translate(300,415) scale(2)'%3E%3Cpath d='M12 12V8'/%3E%3Cpath d='M12 8c0-2.5-2-4-4.5-4 0 2.5 2 4 4.5 4z'/%3E%3Cpath d='M12 8c0-2.5 2-4 4.5-4 0 2.5-2 4-4.5 4z'/%3E%3Cpath d='M4 15c3-2 6-2 9-.5l3.5 1.8c1.2.7.8 2.7-.7 2.7H10c-2.2 0-4.3-1-6-2.6z'/%3E%3C/g%3E%3Cg transform='translate(430,425) scale(1.6) rotate(-8 12 12)'%3E%3Ccircle cx='12' cy='12' r='7.5'/%3E%3Cpath d='M12 12V4.5M12 12l5.3 5.3'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:110;display:flex;align-items:center;justify-content:space-between;padding:18px 40px;transition:all .4s}
+nav.scrolled{padding:12px 40px;background:rgba(6,9,26,.82);backdrop-filter:blur(18px);border-bottom:1px solid rgba(124,58,237,.15);box-shadow:0 10px 40px -12px rgba(3,6,20,.18)}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.02em;font-size:15px;text-transform:uppercase;color:var(--gold3)}
+.logo small{display:block;font-size:10px;letter-spacing:.28em;color:var(--muted);font-weight:600}
+.nav-cta{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--gold2);padding:10px 20px;border:1.5px solid rgba(124,58,237,.4);border-radius:99px;background:rgba(124,58,237,.13);transition:all .3s}
+.nav-cta:hover{background:var(--mint);transform:translateY(-2px);box-shadow:0 10px 26px -10px rgba(124,58,237,.4)}
+
+/* hero */
+.hero{position:relative;z-index:1;min-height:100svh;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px;max-width:1240px;margin:0 auto;padding:130px 40px 90px}
+#spotlight{position:absolute;inset:0;pointer-events:none;background:radial-gradient(640px circle at var(--mx,60%) var(--my,40%),rgba(124,58,237,.06),transparent 65%)}
+.kicker{display:inline-flex;align-items:center;gap:12px;font-size:11.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold2);font-weight:800;padding:9px 22px;border:1.5px solid rgba(124,58,237,.35);border-radius:99px;background:rgba(124,58,237,.13);box-shadow:0 6px 26px rgba(3,6,20,.1);margin-bottom:30px;opacity:0;animation:fadeUp .8s var(--ease) .2s forwards}
+.kicker i{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 10px rgba(34,211,238,.8);animation:pulseDot 2s infinite}
+@keyframes pulseDot{50%{opacity:.35}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+h1{font-weight:800;text-transform:uppercase;line-height:.98;letter-spacing:.005em;color:var(--gold2);font-size:clamp(52px,7.4vw,108px);margin-bottom:26px}
+h1 .l2{background:linear-gradient(100deg,#A78BFA 15%,#C4B5FD 35%,#8B5CF6 50%,#DDD6FE 65%,#C4B5FD 85%);background-size:220% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 7s linear infinite}
+.ch{display:inline-block;opacity:0;transform:translateY(.6em) rotate(8deg);animation:chIn .65s var(--ease) forwards;animation-delay:calc(var(--i)*38ms + 300ms)}
+@keyframes chIn{to{opacity:1;transform:none}}
+.hero-sub{font-size:clamp(17px,1.6vw,20px);color:#BEC6E4;max-width:520px;margin-bottom:14px;opacity:0;animation:fadeUp .8s var(--ease) .75s forwards}
+
+/* ============ THE THREE BUTTONS ============ */
+.cta-row{display:flex;gap:16px;flex-wrap:wrap}
+.btn{
+  position:relative;display:inline-flex;align-items:center;gap:12px;overflow:hidden;
+  font-family:var(--font);font-weight:800;font-size:14.5px;letter-spacing:.06em;text-transform:uppercase;
+  padding:18px 30px;border-radius:99px;cursor:pointer;border:none;
+  transition:transform .3s var(--ease),box-shadow .35s var(--ease),background .3s,border-color .3s,color .3s;
+  will-change:transform;opacity:0;animation:fadeUp .8s var(--ease) forwards;
+}
+.cta-row .btn:nth-child(1){animation-delay:1.05s}
+.cta-row .btn:nth-child(2){animation-delay:1.18s}
+.cta-row .btn:nth-child(3){animation-delay:1.31s}
+.btn svg{width:19px;height:19px;flex:none;transition:transform .35s var(--ease)}
+.btn:hover svg{transform:scale(1.18) rotate(-8deg)}
+.btn::after{content:"";position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.28),transparent);transform:skewX(-20deg);transition:left .6s ease}
+.btn:hover::after{left:130%}
+.btn-buy{color:#fff;background:linear-gradient(120deg,#8B5CF6,#C4B5FD 55%,#DDD6FE);box-shadow:0 16px 44px -12px rgba(124,58,237,.55),inset 0 1px 0 rgba(255,255,255,.35)}
+.btn-buy:hover{box-shadow:0 24px 60px -12px rgba(124,58,237,.7)}
+.btn-sample{color:var(--gold2);background:rgba(124,58,237,.16);border:1.5px solid rgba(124,58,237,.45);box-shadow:0 12px 34px -14px rgba(3,6,20,.3)}
+.btn-sample:hover{background:var(--mint);box-shadow:0 20px 46px -14px rgba(124,58,237,.4)}
+.btn-reviews{color:#C084FC;background:rgba(192,132,252,.07);border:1.5px solid rgba(192,132,252,.45);box-shadow:0 12px 34px -14px rgba(192,132,252,.3)}
+.btn-reviews:hover{background:rgba(192,132,252,.14);box-shadow:0 20px 46px -14px rgba(192,132,252,.45)}
+.btn-reviews svg{color:#C084FC}
+
+/* ============ 3D BOOK ============ */
+.hero-book{position:relative;display:grid;place-items:center;min-height:560px}
+.orbit{position:absolute;width:min(560px,88%);aspect-ratio:1;border:1.5px dashed rgba(124,58,237,.3);border-radius:50%;animation:spin 44s linear infinite}
+.orbit::before{content:"";position:absolute;top:-6px;left:50%;width:11px;height:11px;border-radius:50%;background:var(--gold1);box-shadow:0 0 16px rgba(139,92,246,.9)}
+.orbit.o2{width:min(430px,70%);border-color:rgba(124,58,237,.18);animation-duration:30s;animation-direction:reverse}
+.orbit.o2::before{background:var(--red);box-shadow:0 0 14px rgba(192,132,252,.7);width:8px;height:8px;top:auto;bottom:-4px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.book-float{animation:bookFloat 7s ease-in-out infinite;transform-style:preserve-3d}
+@keyframes bookFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-22px)}}
+.book{
+  position:relative;width:290px;height:420px;transform-style:preserve-3d;
+  transform:rotateY(calc(-24deg + var(--ry,0deg))) rotateX(calc(8deg + var(--rx,0deg)));
+  transition:transform .25s ease-out;
+}
+.face{position:absolute;border-radius:4px 14px 14px 4px}
+.cover{
+  inset:0;transform:translateZ(26px);overflow:hidden;
+  background:#131A38;border:1px solid rgba(124,58,237,.25);
+  box-shadow:0 40px 90px -30px rgba(3,6,20,.5);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;
+}
+.cv-icons{position:absolute;inset:0;pointer-events:none}
+.cv-icons svg{position:absolute;color:#7E8BC7;opacity:.92}
+.cover::before{content:"";position:absolute;left:0;top:0;bottom:0;width:14px;background:linear-gradient(90deg,rgba(12,74,64,.18),transparent)}
+.cover::after{content:"";position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(124,58,237,.13),transparent);transform:skewX(-18deg);animation:coverShine 5.5s ease infinite 2s}
+@keyframes coverShine{0%{left:-70%}55%,100%{left:140%}}
+.cover .t{font-weight:800;text-transform:uppercase;line-height:1.04;position:relative;color:#C4B5FD;padding:0 10px}
+.cover .t .s{display:block;font-size:21px;letter-spacing:.26em;margin-bottom:2px}
+.cover .t .b{display:block;font-size:36px;letter-spacing:.005em}
+.cover .t .s2{display:block;font-size:22px;letter-spacing:.26em;margin:2px 0}
+.cover .t .g{display:block;font-size:58px;color:#22D3EE;letter-spacing:.02em;line-height:1.12}
+.back{inset:0;transform:rotateY(180deg) translateZ(26px);background:linear-gradient(160deg,#171046,#0C0722)}
+.spine{left:-26px;top:0;width:52px;height:100%;transform:rotateY(-90deg);border-radius:4px;background:linear-gradient(90deg,#0C0722,#241A56 50%,#171046);display:flex;align-items:center;justify-content:center}
+.spine span{transform:rotate(90deg);white-space:nowrap;font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:#C4B5FD;font-weight:800}
+.pages{left:264px;top:6px;width:52px;height:calc(100% - 12px);transform:rotateY(90deg);border-radius:2px;background:repeating-linear-gradient(90deg,#0B1024 0 2px,#1A1F3D 2px 3px)}
+.book-shadow{position:absolute;bottom:26px;width:300px;height:44px;border-radius:50%;background:radial-gradient(ellipse,rgba(3,6,20,.35),transparent 70%);filter:blur(8px);animation:shadowPulse 7s ease-in-out infinite}
+@keyframes shadowPulse{0%,100%{transform:scaleX(1);opacity:.9}50%{transform:scaleX(.82);opacity:.55}}
+.float-doodle{position:absolute;color:rgba(124,58,237,.45);width:64px;height:64px;animation:floaty 6s ease-in-out infinite alternate}
+.float-doodle:nth-child(2){animation-delay:1.4s}
+.float-doodle:nth-child(3){animation-delay:2.6s}
+@keyframes floaty{to{transform:translateY(-16px) rotate(5deg)}}
+
+/* marquee */
+.marquee{position:relative;z-index:1;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(124,58,237,.045);overflow:hidden;padding:16px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.marquee-track{display:flex;gap:56px;width:max-content;animation:scrollx 36s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+@keyframes scrollx{to{transform:translateX(-50%)}}
+.marquee span{font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);white-space:nowrap;display:flex;align-items:center;gap:56px}
+.marquee span::after{content:"◆";font-size:8px;color:var(--gold1)}
+
+/* sections */
+section{position:relative;z-index:1;padding:100px 0}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+.sec-head{text-align:center;margin-bottom:60px}
+.sec-head .chip{display:inline-block;font-size:11px;letter-spacing:.34em;text-transform:uppercase;font-weight:800;color:#fff;background:linear-gradient(120deg,#8B5CF6,#C4B5FD);padding:8px 18px;border-radius:99px;box-shadow:0 6px 22px -6px rgba(124,58,237,.5);margin-bottom:18px}
+.sec-head h2{font-weight:800;text-transform:uppercase;font-size:clamp(30px,4.6vw,52px);color:var(--gold3);line-height:1.08}
+.sec-head p{color:var(--muted);max-width:560px;margin:14px auto 0}
+
+/* chapter cards */
+.ch-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.ch-card{position:relative;padding:28px 22px;border-radius:20px;background:var(--surface);border:1px solid var(--line);transition:all .5s var(--ease);overflow:hidden;display:block}
+.ch-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#DDD6FE,#8B5CF6);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.ch-card:hover{transform:translateY(-10px);border-color:rgba(124,58,237,.4);box-shadow:0 30px 60px -26px rgba(3,6,20,.4),0 0 40px -18px rgba(124,58,237,.25)}
+.ch-card:hover::before{transform:scaleX(1)}
+.ch-card .no{font-weight:800;font-size:34px;color:transparent;-webkit-text-stroke:1.5px var(--gold1);line-height:1}
+.ch-card h3{font-size:17px;font-weight:800;margin:14px 0 8px;color:#EDE9FE;line-height:1.3}
+.ch-card p{font-size:13.5px;color:var(--muted);line-height:1.55}
+.ch-card .go{position:absolute;right:16px;bottom:14px;color:var(--gold1);font-weight:800;opacity:0;transform:translateX(-8px);transition:all .4s var(--ease)}
+.ch-card:hover .go{opacity:1;transform:none}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.stat{text-align:center;padding:36px 18px;border-radius:22px;background:var(--surface);border:1px solid var(--line);position:relative;overflow:hidden;transition:all .45s var(--ease)}
+.stat::after{content:"";position:absolute;left:50%;bottom:-60px;width:170px;height:120px;transform:translateX(-50%);background:radial-gradient(ellipse,rgba(124,58,237,.13),transparent 70%);opacity:0;transition:opacity .45s}
+.stat:hover{transform:translateY(-6px);border-color:rgba(124,58,237,.4);box-shadow:0 26px 56px -24px rgba(3,6,20,.35)}
+.stat:hover::after{opacity:1}
+.stat .v{font-weight:800;font-size:clamp(34px,4.4vw,48px);background:linear-gradient(110deg,#DDD6FE,#C4B5FD 55%,#8B5CF6);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.05}
+.stat .l{margin-top:10px;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:700}
+
+/* quote */
+.quote-band{padding:40px 0}
+.big-quote{margin:0 auto;max-width:900px;padding:56px 44px;text-align:center;border-radius:26px;position:relative;background:radial-gradient(ellipse at 50% 0%,rgba(124,58,237,.08),rgba(124,58,237,.10) 65%);border:1.5px solid rgba(124,58,237,.25)}
+.big-quote::before{content:"“";position:absolute;top:-14px;left:50%;transform:translateX(-50%);font-size:110px;color:rgba(124,58,237,.28);line-height:1;font-weight:800}
+.big-quote p{font-weight:700;font-size:clamp(22px,3.2vw,34px);line-height:1.4;color:#E8EAF8;text-wrap:balance}
+.big-quote p strong{color:var(--gold2);font-weight:800}
+.big-quote .by{margin-top:18px;font-size:12px;letter-spacing:.4em;text-transform:uppercase;color:var(--muted);font-weight:700}
+
+/* CTA panel */
+#cta{background:radial-gradient(ellipse at 50% 120%,rgba(34,211,238,.16),transparent 55%),linear-gradient(180deg,#171046,#0C0722);border-top:1px solid rgba(124,58,237,.3);text-align:center;padding:120px 0}
+#cta::before{content:"";position:absolute;inset:0;pointer-events:none;background-size:520px 520px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='520' height='520' viewBox='0 0 520 520'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.1' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E<g transform='translate(30,26) scale(2.0) rotate(-4 12 12)'><path d='M7 3.5v4'/><rect x='4.8' y='7.5' width='4.4' height='8' rx='1.2'/><path d='M7 15.5v4.5'/><path d='M17 5v3'/><rect x='14.8' y='8' width='4.4' height='6' rx='1.2'/><path d='M17 14v5'/></g><g transform='translate(175,18) scale(1.8) rotate(6 12 12)'><path d='M3 18.5l5.5-5.5 3.2 3.2L20.5 7.5'/><path d='M16.4 7.5h4.1v4.1'/></g><g transform='translate(300,34) scale(2.0) rotate(-3 12 12)'><circle cx='7.5' cy='7.5' r='2.4'/><circle cx='16.5' cy='16.5' r='2.4'/><path d='M18.6 5.4 5.4 18.6'/></g><g transform='translate(425,24) scale(1.7)'><path d='M12 3l1.8 6.2L20 11l-6.2 1.8L12 19l-1.8-6.2L4 11l6.2-1.8z'/></g><g transform='translate(36,150) scale(1.9) rotate(5 12 12)'><circle cx='12' cy='12' r='8.4'/><path d='M10 8.2h3.4a2 2 0 0 1 0 4H10z'/><path d='M10 12.2h3.9a2.1 2.1 0 0 1 0 4.2H10z'/><path d='M11.6 6.6v1.6M14 6.6v1.6M11.6 16.4v1.6M14 16.4v1.6'/></g><g transform='translate(165,165) scale(1.9)'><circle cx='12' cy='12' r='8.4'/><path d='M12 16.6V8'/><path d='M8.4 11.6 12 8l3.6 3.6'/></g><g transform='translate(300,140) scale(1.9)'><circle cx='12' cy='12' r='8.4'/><path d='M12 7.4V16'/><path d='M8.4 12.4 12 16l3.6-3.6'/></g><g transform='translate(425,155) scale(2.0) rotate(6 12 12)'><circle cx='12' cy='12' r='8'/><circle cx='12' cy='12' r='4.2'/><circle cx='12' cy='12' r='1.2'/><path d='M12 3.2v2.6M12 18.2v2.6M3.2 12h2.6M18.2 12h2.6'/></g><g transform='translate(55,285) scale(1.8)'><path d='M3.5 19.6h17'/><path d='M7 19.6v-5.6M11 19.6v-9M15 19.6v-3.6M19 19.6v-7.2'/></g><g transform='translate(175,300) scale(1.8) rotate(-4 12 12)'><path d='M12 3l6.5 6-6.5 12L5.5 9z'/><path d='M5.6 9h12.8'/><path d='M9.4 9 12 3.4 14.6 9'/></g><g transform='translate(325,300) scale(1.7)'><circle cx='10.6' cy='10.6' r='5.6'/><path d='M14.8 14.8 20 20'/><path d='M8 12.4l2-2 1.6 1.6 3-3.2'/></g><g transform='translate(435,315) scale(1.8) rotate(5 12 12)'><path d='M13.2 2.5 6 13.2h4.6l-.8 8.3 7.2-10.7h-4.6z'/></g><g transform='translate(28,400) scale(1.9) rotate(4 12 12)'><circle cx='12' cy='12' r='8.2'/><path d='M12 3.8V12h8.2'/></g><g transform='translate(160,430) scale(1.8) rotate(-6 12 12)'><path d='M16.5 3.5a9 9 0 1 0 0 17 11 11 0 0 1 0-17z'/></g><g transform='translate(300,415) scale(2.0)'><path d='M12 2.5c2.6 2.3 4 5.5 4 9.4l2.4 3.6-3.6-.6-2.8 6-2.8-6-3.6.6L8 11.9c0-3.9 1.4-7.1 4-9.4z'/><circle cx='12' cy='9' r='1.8'/></g><g transform='translate(430,425) scale(1.7) rotate(-8 12 12)'><circle cx='12' cy='12' r='6'/><ellipse cx='12' cy='12' rx='10.5' ry='3.4' transform='rotate(-18 12 12)'/></g>%3C/g%3E%3C/svg%3E")}
+#cta .wrap{position:relative}
+#cta h2{font-weight:800;text-transform:uppercase;font-size:clamp(36px,6vw,76px);color:#EDE9FE;line-height:1.05;margin-bottom:20px}
+#cta h2 em{font-style:normal;color:transparent;-webkit-text-stroke:1.5px #22D3EE}
+#cta p{color:#C7D2FE;max-width:560px;margin:0 auto 46px}
+#cta p strong{color:#67E8F9}
+#cta .cta-row{justify-content:center}
+#cta .btn{opacity:1;animation:none}
+#cta .btn-sample{background:rgba(124,58,237,.1);border-color:rgba(196,181,253,.5);color:#C4B5FD}
+#cta .btn-sample:hover{background:rgba(124,58,237,.18)}
+#cta .btn-reviews{background:rgba(34,211,238,.1);border-color:rgba(34,211,238,.5);color:#f0b3a2}
+#cta .btn-reviews:hover{background:rgba(34,211,238,.18)}
+#cta .btn-reviews svg{color:#f0b3a2}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:44px 0;position:relative;z-index:1;background:rgba(124,58,237,.04)}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.foot .m{font-weight:800;text-transform:uppercase;color:var(--gold3);font-size:17px}
+.foot .m span{color:var(--gold1)}
+.foot p{font-size:13px;color:var(--muted)}
+
+/* reveals */
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:var(--d,0s)}
+.reveal.visible{opacity:1;transform:none}
+
+/* responsive */
+@media(max-width:1020px){
+  .ch-grid{grid-template-columns:repeat(2,1fr)}
+  .stats{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;padding-top:110px;text-align:center;gap:10px}
+  .hero-sub{margin-inline:auto}
+  .cta-row{justify-content:center}
+  .hero-book{min-height:520px;margin-top:20px}
+  nav{padding:14px 20px}
+}
+@media(max-width:600px){
+  .ch-grid,.stats{grid-template-columns:1fr}
+  .book{width:230px;height:340px}
+  .cover .t .s{font-size:15px}.cover .t .b{font-size:27px}.cover .t .s2{font-size:16px}.cover .t .g{font-size:42px}
+  .pages{left:204px}.spine{left:-26px}
+  .btn{width:100%;justify-content:center}
+}
+
+a,button{touch-action:manipulation}
+@media(max-width:480px){
+  .hero{padding:108px 18px 56px;gap:6px}
+  .kicker{letter-spacing:.22em;padding:8px 16px;font-size:10.5px}
+  .hero-book{min-height:430px;margin-top:10px}
+  .book{width:206px;height:300px}
+  .cover .t .s{font-size:14px}
+  .cover .t .b{font-size:24px}
+  .cover .t .s2{font-size:15px}
+  .cover .t .g{font-size:37px}
+  .pages{left:180px}
+  .orbit{width:96%}
+  .orbit.o2{width:78%}
+  .float-doodle{width:44px;height:44px}
+  .sec-head h2{font-size:25px}
+  .sec-head p{font-size:14px}
+  .ch-grid{gap:14px}
+  .ch-card{padding:22px 18px}
+  .stat{padding:26px 12px}
+  .big-quote{padding:36px 20px}
+  #cta{padding:88px 0 80px}
+  #cta h2{font-size:29px}
+  #cta p{font-size:15px}
+  .wrap{padding:0 18px}
+  .marquee span{font-size:12px;gap:34px}
+  .marquee-track{gap:34px}
+  section{padding:72px 0}
+  .book-shadow{width:220px;bottom:18px}
+}
+@media(max-width:380px){
+  h1{font-size:38px}
+  .btn{padding:14px 20px;font-size:12.5px}
+  .nav-cta{padding:8px 13px;font-size:10.5px;letter-spacing:.1em}
+  .logo{font-size:13px}
+  .book{width:186px;height:272px}
+  .pages{left:160px}
+  .cover .t .b{font-size:21px}
+  .cover .t .g{font-size:32px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}
+  .ch,.kicker,.hero-sub,.btn{opacity:1;transform:none}
+}
+
+.nav-right{display:flex;gap:12px;align-items:center}
+
+
+.badge{display:inline-block;margin-top:16px;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:800;padding:7px 15px;border-radius:99px}
+.badge.sample{color:#fff;background:linear-gradient(120deg,#8B5CF6,#C4B5FD);box-shadow:0 6px 18px -6px rgba(124,58,237,.5)}
+.badge.full{color:var(--muted);border:1.5px solid var(--line)}
+
+/* ══════════════════════════════════════════════════════════════════
+   SOULHUNT × MOON.com — DARK COSMIC PURPLE THEME LAYER
+   (indigo-violet-cyan "Avengers" palette, from the brand reference)
+   ══════════════════════════════════════════════════════════════════ */
+:root{
+  --violet:#7C3AED;--violet-lt:#A78BFA;--violet-pale:#C4B5FD;--violet-mist:#EDE9FE;
+  --indigo:#4F46E5;--indigo-deep:#312E81;--indigo-ink:#1E1B4B;
+  --blue:#3B82F6;--cyan:#22D3EE;--cyan-lt:#67E8F9;--magenta:#C084FC;
+  --glass:rgba(124,58,237,.13);--glass-2:rgba(139,92,246,.08);--glow:rgba(124,58,237,.55);
+}
+
+/* ── space doodle wallpaper (violet) ─────────────────────── */
+#doodles{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='520' height='520' viewBox='0 0 520 520'%3E%3Cg fill='none' stroke='%238A7BE0' stroke-opacity='.28' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E<g transform='translate(30,26) scale(2.0) rotate(-4 12 12)'><path d='M7 3.5v4'/><rect x='4.8' y='7.5' width='4.4' height='8' rx='1.2'/><path d='M7 15.5v4.5'/><path d='M17 5v3'/><rect x='14.8' y='8' width='4.4' height='6' rx='1.2'/><path d='M17 14v5'/></g><g transform='translate(175,18) scale(1.8) rotate(6 12 12)'><path d='M3 18.5l5.5-5.5 3.2 3.2L20.5 7.5'/><path d='M16.4 7.5h4.1v4.1'/></g><g transform='translate(300,34) scale(2.0) rotate(-3 12 12)'><circle cx='7.5' cy='7.5' r='2.4'/><circle cx='16.5' cy='16.5' r='2.4'/><path d='M18.6 5.4 5.4 18.6'/></g><g transform='translate(425,24) scale(1.7)'><path d='M12 3l1.8 6.2L20 11l-6.2 1.8L12 19l-1.8-6.2L4 11l6.2-1.8z'/></g><g transform='translate(36,150) scale(1.9) rotate(5 12 12)'><circle cx='12' cy='12' r='8.4'/><path d='M10 8.2h3.4a2 2 0 0 1 0 4H10z'/><path d='M10 12.2h3.9a2.1 2.1 0 0 1 0 4.2H10z'/><path d='M11.6 6.6v1.6M14 6.6v1.6M11.6 16.4v1.6M14 16.4v1.6'/></g><g transform='translate(165,165) scale(1.9)'><circle cx='12' cy='12' r='8.4'/><path d='M12 16.6V8'/><path d='M8.4 11.6 12 8l3.6 3.6'/></g><g transform='translate(300,140) scale(1.9)'><circle cx='12' cy='12' r='8.4'/><path d='M12 7.4V16'/><path d='M8.4 12.4 12 16l3.6-3.6'/></g><g transform='translate(425,155) scale(2.0) rotate(6 12 12)'><circle cx='12' cy='12' r='8'/><circle cx='12' cy='12' r='4.2'/><circle cx='12' cy='12' r='1.2'/><path d='M12 3.2v2.6M12 18.2v2.6M3.2 12h2.6M18.2 12h2.6'/></g><g transform='translate(55,285) scale(1.8)'><path d='M3.5 19.6h17'/><path d='M7 19.6v-5.6M11 19.6v-9M15 19.6v-3.6M19 19.6v-7.2'/></g><g transform='translate(175,300) scale(1.8) rotate(-4 12 12)'><path d='M12 3l6.5 6-6.5 12L5.5 9z'/><path d='M5.6 9h12.8'/><path d='M9.4 9 12 3.4 14.6 9'/></g><g transform='translate(325,300) scale(1.7)'><circle cx='10.6' cy='10.6' r='5.6'/><path d='M14.8 14.8 20 20'/><path d='M8 12.4l2-2 1.6 1.6 3-3.2'/></g><g transform='translate(435,315) scale(1.8) rotate(5 12 12)'><path d='M13.2 2.5 6 13.2h4.6l-.8 8.3 7.2-10.7h-4.6z'/></g><g transform='translate(28,400) scale(1.9) rotate(4 12 12)'><circle cx='12' cy='12' r='8.2'/><path d='M12 3.8V12h8.2'/></g><g transform='translate(160,430) scale(1.8) rotate(-6 12 12)'><path d='M16.5 3.5a9 9 0 1 0 0 17 11 11 0 0 1 0-17z'/></g><g transform='translate(300,415) scale(2.0)'><path d='M12 2.5c2.6 2.3 4 5.5 4 9.4l2.4 3.6-3.6-.6-2.8 6-2.8-6-3.6.6L8 11.9c0-3.9 1.4-7.1 4-9.4z'/><circle cx='12' cy='9' r='1.8'/></g><g transform='translate(430,425) scale(1.7) rotate(-8 12 12)'><circle cx='12' cy='12' r='6'/><ellipse cx='12' cy='12' rx='10.5' ry='3.4' transform='rotate(-18 12 12)'/></g>%3C/g%3E%3C/svg%3E")}
+
+/* ── brand gradients & signature components ──────────────── */
+#progress i{background:linear-gradient(90deg,#312E81,#7C3AED 45%,#22D3EE);box-shadow:0 0 14px rgba(124,58,237,.75)}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#7C3AED,#22D3EE)}
+h1 .l2{background:linear-gradient(100deg,#A78BFA 12%,#7C3AED 32%,#22D3EE 50%,#8B5CF6 68%,#C4B5FD 88%);background-size:220% auto;-webkit-background-clip:text;background-clip:text}
+.sec-head .chip,.community .chip{background:linear-gradient(120deg,#7C3AED,#4F46E5);box-shadow:0 8px 24px -8px rgba(124,58,237,.85)}
+.kicker{border-color:rgba(167,139,250,.42);box-shadow:0 6px 26px rgba(4,6,22,.55)}
+.kicker i{background:var(--cyan);box-shadow:0 0 12px rgba(34,211,238,.9)}
+
+.btn-buy{background:linear-gradient(120deg,#7C3AED,#4F46E5 55%,#312E81);box-shadow:0 18px 48px -14px rgba(124,58,237,.75),inset 0 1px 0 rgba(255,255,255,.3)}
+.btn-buy:hover{box-shadow:0 26px 64px -14px rgba(124,58,237,.9),0 0 40px -10px rgba(34,211,238,.35)}
+.btn-sample{color:var(--violet-pale);background:rgba(124,58,237,.14);border-color:rgba(167,139,250,.5);box-shadow:0 12px 34px -16px rgba(124,58,237,.6)}
+.btn-sample:hover{background:rgba(124,58,237,.24);box-shadow:0 20px 46px -16px rgba(124,58,237,.7)}
+.btn-reviews{color:var(--cyan-lt);background:rgba(34,211,238,.09);border-color:rgba(34,211,238,.42);box-shadow:0 12px 34px -16px rgba(34,211,238,.5)}
+.btn-reviews:hover{background:rgba(34,211,238,.17)}
+.btn-reviews svg{color:var(--cyan)}
+.badge.sample{background:linear-gradient(120deg,#7C3AED,#4F46E5);box-shadow:0 8px 20px -8px rgba(124,58,237,.85)}
+.orbit{border-color:rgba(139,92,246,.34)}
+.orbit.o2{border-color:rgba(34,211,238,.24)}
+.float-doodle{color:rgba(167,139,250,.5)}
+.marquee{border-color:rgba(139,92,246,.2);background:linear-gradient(90deg,rgba(124,58,237,.08),rgba(34,211,238,.05))}
+.marquee span::after{color:var(--cyan)}
+
+/* hero headline: sized so it can never wrap inside its column */
+.hero h1{font-size:clamp(40px,7.1vw,92px)}
+.hero h1 [data-split]{white-space:nowrap}
+
+/* hero sub-line emphasis */
+.hero-sub strong{color:var(--cyan)}
+/* gradient line: animated as a whole block, so background-clip:text stays visible
+   (per-letter layers make Chromium paint clipped gradient text transparent) */
+h1 .l2{display:inline-block;opacity:0;animation:fadeUp .8s var(--ease) .5s forwards,shine 7s linear infinite}
+
+/* ── code chip ───────────────────────────────────────────── */
+.code-chip{display:inline-flex;align-items:center;gap:20px;padding:15px 16px 15px 26px;border:2px dashed rgba(167,139,250,.52);border-radius:20px;background:var(--glass);box-shadow:0 18px 46px -20px rgba(124,58,237,.85);backdrop-filter:blur(10px);margin-bottom:30px;opacity:0;animation:fadeUp .8s var(--ease) .92s forwards}
+.code-chip small{font-size:11.5px;letter-spacing:.3em;text-transform:uppercase;color:#AEB6D6;font-weight:800;line-height:1}
+.code-chip b{font-size:27px;letter-spacing:.26em;font-weight:800;color:#fff;line-height:1;text-shadow:0 0 22px rgba(124,58,237,.9)}
+.copy-btn{font-family:var(--font);cursor:pointer;font-size:12.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#fff;background:linear-gradient(120deg,#7C3AED,#4F46E5);border:none;border-radius:99px;padding:15px 26px;transition:all .3s var(--ease);flex:none;box-shadow:0 12px 28px -12px rgba(124,58,237,.95)}
+.copy-btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px -10px rgba(124,58,237,1)}
+.copy-btn.copied{background:linear-gradient(120deg,#22D3EE,#0891B2);color:#04121B}
+.btn.copied{box-shadow:0 0 0 3px rgba(34,211,238,.3),0 18px 44px -14px rgba(34,211,238,.4)}
+
+/* ── scroll cue ──────────────────────────────────────────── */
+.scroll-cue{margin-top:44px;display:inline-flex;align-items:center;gap:13px;font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;font-weight:800;color:#9BA4C6;opacity:0;animation:fadeUp .8s var(--ease) 1.5s forwards}
+.scroll-cue .mouse{width:20px;height:32px;border:1.5px solid rgba(167,139,250,.5);border-radius:12px;position:relative;flex:none}
+.scroll-cue .mouse::before{content:"";position:absolute;left:50%;top:6px;width:3px;height:6px;border-radius:2px;background:var(--cyan);transform:translateX(-50%);animation:wheel 1.9s ease-in-out infinite}
+@keyframes wheel{0%{opacity:0;transform:translate(-50%,0)}30%{opacity:1}70%{opacity:1}100%{opacity:0;transform:translate(-50%,10px)}}
+.scroll-cue:hover{color:var(--violet-pale)}
+
+/* ── hero moon scene ─────────────────────────────────────── */
+.hero-moon{position:relative;display:grid;place-items:center;min-height:560px}
+.moon-stars{position:absolute;inset:-6% -3%;pointer-events:none}
+.star{position:absolute;border-radius:50%;background:var(--violet-lt);box-shadow:0 0 9px rgba(139,92,246,.9);animation:twinkle 3.6s ease-in-out infinite}
+.star.c{background:var(--cyan-lt);box-shadow:0 0 10px rgba(34,211,238,.95)}
+@keyframes twinkle{0%,100%{opacity:.85;transform:scale(1)}50%{opacity:.18;transform:scale(.55)}}
+.moon-float{animation:bookFloat 9s ease-in-out infinite;transform-style:preserve-3d}
+.moon{position:relative;width:min(322px,56vw);aspect-ratio:1;border-radius:50%;overflow:hidden;
+  background:radial-gradient(circle at 30% 26%,#ffffff 0%,#F3F0FF 13%,#DDD6FE 30%,#B9AEF0 50%,#8B7FD4 72%,#6357A8 90%,#4A3F86 100%);
+  box-shadow:inset -20px -26px 62px rgba(24,16,64,.62),inset 14px 16px 44px rgba(255,255,255,.7),0 46px 110px -32px rgba(0,0,0,.85),0 0 110px -12px rgba(124,58,237,.55);
+  transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .35s ease-out}
+.mare{position:absolute;aspect-ratio:1;border-radius:50%;filter:blur(7px);background:radial-gradient(circle at 42% 38%,rgba(76,64,140,.55),rgba(76,64,140,.05) 72%)}
+.crater{position:absolute;aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle at 36% 30%,rgba(255,255,255,.5),rgba(150,138,205,.45) 58%,rgba(88,76,150,.5));
+  box-shadow:inset 1px 2px 4px rgba(255,255,255,.5),inset -2px -2px 5px rgba(58,48,110,.5)}
+.moon-grain{position:absolute;inset:0;opacity:.18;background-image:radial-gradient(rgba(70,58,130,.6) 1px,transparent 1.4px),radial-gradient(rgba(255,255,255,.6) 1px,transparent 1.4px);background-size:14px 14px,22px 22px;background-position:0 0,7px 9px}
+.moon-shade{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 26% 22%,rgba(255,255,255,.42),transparent 42%),radial-gradient(circle at 84% 88%,rgba(12,6,42,.6),transparent 58%)}
+.moon-shadow{position:absolute;bottom:20px;width:min(330px,58vw);height:46px;border-radius:50%;background:radial-gradient(ellipse,rgba(124,58,237,.4),transparent 70%);filter:blur(10px);animation:shadowPulse 9s ease-in-out infinite}
+.moon-badge{position:absolute;right:1%;top:14%;text-align:center;padding:15px 22px;border-radius:18px;background:rgba(12,10,38,.55);border:1px solid rgba(167,139,250,.35);backdrop-filter:blur(12px);box-shadow:0 26px 60px -26px rgba(0,0,0,.9),0 0 40px -18px rgba(124,58,237,.8);animation:floaty 6s ease-in-out infinite alternate}
+.moon-badge small{display:block;font-size:9.5px;letter-spacing:.26em;text-transform:uppercase;color:#A9B1D0;font-weight:800;margin-bottom:5px}
+.moon-badge b{font-size:27px;font-weight:800;line-height:1;background:linear-gradient(110deg,#fff,#C4B5FD 45%,#22D3EE);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* ── cards / steps / community ───────────────────────────── */
+.ch-card h3 .k-sub{display:block;margin-top:3px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--cyan);font-weight:800}
+.steps-row{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.step-card{position:relative;padding:30px 24px;border-radius:20px;background:var(--surface);border:1px solid var(--line);transition:all .5s var(--ease)}
+.step-card::after{content:"\2192";position:absolute;right:-16px;top:50%;transform:translateY(-50%);color:var(--cyan);font-weight:800;font-size:18px;opacity:.75}
+.step-card:last-child::after{display:none}
+.step-card:hover{transform:translateY(-8px);border-color:rgba(167,139,250,.55);box-shadow:0 30px 64px -26px rgba(0,0,0,.85),0 0 44px -16px rgba(124,58,237,.55)}
+.step-card .no{font-weight:800;font-size:42px;line-height:1;color:transparent;-webkit-text-stroke:1.5px var(--violet-lt)}
+.step-card h3{margin:14px 0 8px;font-size:16.5px;font-weight:800;color:#EDE9FE;text-transform:uppercase;letter-spacing:.03em;line-height:1.3}
+.step-card p{font-size:13.5px;color:var(--muted);line-height:1.6}
+.step-card p b{color:var(--cyan)}
+.note{margin:36px auto 0;max-width:680px;text-align:center;font-size:12.5px;line-height:1.7;color:var(--muted)}
+.community{position:relative;overflow:hidden;text-align:center;border-radius:26px;padding:56px 40px;background:radial-gradient(ellipse at 50% 0%,rgba(124,58,237,.22),rgba(79,70,229,.06) 62%);border:1.5px solid rgba(139,92,246,.3);box-shadow:0 40px 90px -40px rgba(0,0,0,.9)}
+.community::before{content:"";position:absolute;top:-70px;right:-60px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(34,211,238,.16),transparent 70%)}
+.community h2{position:relative;font-weight:800;text-transform:uppercase;font-size:clamp(24px,3.4vw,42px);color:#F2EFFF;line-height:1.1}
+.community p{position:relative;color:var(--muted);max-width:560px;margin:14px auto 0}
+.community .cta-row{justify-content:center;margin-top:32px}
+.community .btn{width:auto}
+
+/* ── toast + back-to-top ─────────────────────────────────── */
+#toast{position:fixed;left:50%;bottom:34px;z-index:220;padding:13px 24px;border-radius:99px;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#fff;background:linear-gradient(120deg,#7C3AED,#4F46E5);box-shadow:0 20px 50px -18px rgba(124,58,237,.95),0 0 40px -14px rgba(34,211,238,.5);opacity:0;pointer-events:none;transform:translate(-50%,18px);transition:all .45s var(--ease)}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+#topBtn{position:fixed;right:26px;bottom:26px;z-index:115;width:46px;height:46px;border-radius:50%;cursor:pointer;border:1.5px solid rgba(167,139,250,.45);background:rgba(12,10,38,.72);backdrop-filter:blur(12px);color:var(--violet-pale);display:grid;place-items:center;opacity:0;visibility:hidden;transition:all .4s var(--ease)}
+#topBtn.show{opacity:1;visibility:visible}
+#topBtn:hover{transform:translateY(-3px);box-shadow:0 14px 34px -12px rgba(124,58,237,.9)}
+#topBtn svg{width:20px;height:20px}
+.foot .fine{font-size:12.5px;line-height:1.65;max-width:720px}
+
+/* ── brand lockup: nav logo + loader ─────────────────────── */
+.logo{gap:10px}
+.logo-mark{width:32px;height:32px;flex:none;filter:drop-shadow(0 6px 16px rgba(124,58,237,.7)) drop-shadow(0 0 12px rgba(34,211,238,.35))}
+.logo .txt{display:block;line-height:1.05}
+.logo .txt b{display:block;font-size:15px;font-weight:800;letter-spacing:.06em;color:#F2EFFF}
+.logo .txt b em{font-style:normal;background:linear-gradient(100deg,#A78BFA,#22D3EE);-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo small{margin-top:3px;font-size:9px;letter-spacing:.26em;color:#8E97C0;font-weight:700}
+
+#loader{background:radial-gradient(ellipse at 50% 42%,#160E3C 0%,#0A0C22 45%,#05060F 100%)}
+#loader::before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='520' height='520' viewBox='0 0 520 520'%3E%3Cg fill='none' stroke='%238A7BE0' stroke-opacity='.28' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E<g transform='translate(30,26) scale(2.0) rotate(-4 12 12)'><path d='M7 3.5v4'/><rect x='4.8' y='7.5' width='4.4' height='8' rx='1.2'/><path d='M7 15.5v4.5'/><path d='M17 5v3'/><rect x='14.8' y='8' width='4.4' height='6' rx='1.2'/><path d='M17 14v5'/></g><g transform='translate(175,18) scale(1.8) rotate(6 12 12)'><path d='M3 18.5l5.5-5.5 3.2 3.2L20.5 7.5'/><path d='M16.4 7.5h4.1v4.1'/></g><g transform='translate(300,34) scale(2.0) rotate(-3 12 12)'><circle cx='7.5' cy='7.5' r='2.4'/><circle cx='16.5' cy='16.5' r='2.4'/><path d='M18.6 5.4 5.4 18.6'/></g><g transform='translate(425,24) scale(1.7)'><path d='M12 3l1.8 6.2L20 11l-6.2 1.8L12 19l-1.8-6.2L4 11l6.2-1.8z'/></g><g transform='translate(36,150) scale(1.9) rotate(5 12 12)'><circle cx='12' cy='12' r='8.4'/><path d='M10 8.2h3.4a2 2 0 0 1 0 4H10z'/><path d='M10 12.2h3.9a2.1 2.1 0 0 1 0 4.2H10z'/><path d='M11.6 6.6v1.6M14 6.6v1.6M11.6 16.4v1.6M14 16.4v1.6'/></g><g transform='translate(165,165) scale(1.9)'><circle cx='12' cy='12' r='8.4'/><path d='M12 16.6V8'/><path d='M8.4 11.6 12 8l3.6 3.6'/></g><g transform='translate(300,140) scale(1.9)'><circle cx='12' cy='12' r='8.4'/><path d='M12 7.4V16'/><path d='M8.4 12.4 12 16l3.6-3.6'/></g><g transform='translate(425,155) scale(2.0) rotate(6 12 12)'><circle cx='12' cy='12' r='8'/><circle cx='12' cy='12' r='4.2'/><circle cx='12' cy='12' r='1.2'/><path d='M12 3.2v2.6M12 18.2v2.6M3.2 12h2.6M18.2 12h2.6'/></g><g transform='translate(55,285) scale(1.8)'><path d='M3.5 19.6h17'/><path d='M7 19.6v-5.6M11 19.6v-9M15 19.6v-3.6M19 19.6v-7.2'/></g><g transform='translate(175,300) scale(1.8) rotate(-4 12 12)'><path d='M12 3l6.5 6-6.5 12L5.5 9z'/><path d='M5.6 9h12.8'/><path d='M9.4 9 12 3.4 14.6 9'/></g><g transform='translate(325,300) scale(1.7)'><circle cx='10.6' cy='10.6' r='5.6'/><path d='M14.8 14.8 20 20'/><path d='M8 12.4l2-2 1.6 1.6 3-3.2'/></g><g transform='translate(435,315) scale(1.8) rotate(5 12 12)'><path d='M13.2 2.5 6 13.2h4.6l-.8 8.3 7.2-10.7h-4.6z'/></g><g transform='translate(28,400) scale(1.9) rotate(4 12 12)'><circle cx='12' cy='12' r='8.2'/><path d='M12 3.8V12h8.2'/></g><g transform='translate(160,430) scale(1.8) rotate(-6 12 12)'><path d='M16.5 3.5a9 9 0 1 0 0 17 11 11 0 0 1 0-17z'/></g><g transform='translate(300,415) scale(2.0)'><path d='M12 2.5c2.6 2.3 4 5.5 4 9.4l2.4 3.6-3.6-.6-2.8 6-2.8-6-3.6.6L8 11.9c0-3.9 1.4-7.1 4-9.4z'/><circle cx='12' cy='9' r='1.8'/></g><g transform='translate(430,425) scale(1.7) rotate(-8 12 12)'><circle cx='12' cy='12' r='6'/><ellipse cx='12' cy='12' rx='10.5' ry='3.4' transform='rotate(-18 12 12)'/></g>%3C/g%3E%3C/svg%3E");background-size:520px 520px;opacity:.5;pointer-events:none}
+
+/* ── responsive additions ─────────────────────────────────── */
+@media(max-width:1020px){
+  .steps-row{grid-template-columns:1fr;gap:18px}
+  .step-card::after{display:none}
+}
+@media(max-width:900px){
+  .hero-moon{min-height:520px;margin-top:10px}
+  .moon-badge{right:6%;top:10%}
+  .scroll-cue{margin-inline:auto}
+}
+@media(max-width:600px){
+  .logo-mark{width:26px;height:26px}
+  .logo .txt b{font-size:13.5px}
+  .logo small{display:none}
+  .nav-right{gap:8px}
+  .nav-cta{font-size:10.5px;letter-spacing:.1em;padding:9px 14px;white-space:nowrap}
+    .moon{width:min(252px,62vw)}
+  .moon-badge{padding:12px 16px}
+  .moon-badge b{font-size:22px}
+  .community{padding:40px 22px}
+  .code-chip{width:100%;justify-content:space-between}
+  .community .btn{width:100%}
+    }
+@media(max-width:480px){
+  .logo .txt b{font-size:12.5px}
+  .nav-cta{font-size:9.5px;letter-spacing:.07em;padding:8px 11px}
+  .moon{width:min(212px,58vw)}
+  .hero-moon{min-height:430px}
+  .moon-badge{right:2%;top:4%;padding:10px 14px}
+  .moon-badge b{font-size:19px}
+  .moon-shadow{width:220px;bottom:14px}
+  .steps-row{gap:14px}
+  .step-card{padding:24px 18px}
+  .note{font-size:12px}
+  #topBtn{right:16px;bottom:18px}
+    }
+
+
+/* ══ mobile pass: smooth + nothing cut off ═════════════════════ */
+@media(max-width:820px){
+  /* 1 · backdrop blurs force a live re-blur of everything behind them while you scroll */
+  nav.scrolled{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(6,9,26,.95);box-shadow:0 8px 26px -16px rgba(0,0,0,.85)}
+  .code-chip{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(11,9,32,.88)}
+  .moon-badge{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(12,10,38,.9)}
+  #topBtn{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(10,8,32,.94)}
+  .sticky-cta{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(8,6,26,.96)}
+
+  /* 2 · big blur radii are the heaviest thing we paint */
+  .orb{filter:blur(46px);opacity:.4}
+  .mare{filter:blur(3px)}
+  .book-shadow,.moon-shadow{filter:blur(6px)}
+
+  /* 3 · decorative loops stop: fewer layers moving per frame = higher fps, cooler phone */
+  .orb-1,.orb-2,.orbit,.book-float,.moon-float,.book-shadow,.moon-shadow,
+  .cover::after,.float-doodle,.moon-badge,.star{animation:none}
+  h1 .l2{animation:fadeUp .8s var(--ease) .5s forwards}   /* keep the entrance, drop the endless shine sweep */
+  .star:nth-child(n+13){display:none}
+
+  /* 4 · don't paint far-below-the-fold sections until they're needed */
+  #community,footer{content-visibility:auto;contain-intrinsic-size:auto 880px}
+
+  /* 5 · instant taps, no grey flash */
+  body{-webkit-tap-highlight-color:transparent}
+  a,button,.code-chip,.copy-btn{touch-action:manipulation}
+
+  /* 6 · every tap target at least 44px tall */
+  .logo{padding:9px 0}
+  a.scroll-cue{padding:9px 0;margin-top:34px}
+
+  /* 7 · notch + rounded-corner breathing room (landscape too) */
+  nav{padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
+
+  /* 8 · same burst, far cheaper to fill */
+  #flare{filter:none;width:116px;height:116px;margin:-58px 0 0 -58px}
+  #flare.play{animation:flareGoM 1.25s cubic-bezier(.12,.72,.25,1) forwards}
+  #glow{background:radial-gradient(closest-side at 50% 55%,#fff 0%,rgba(237,233,254,.9) 18%,rgba(139,92,246,.46) 44%,transparent 74%),radial-gradient(circle at 50% 55%,rgba(34,211,238,.3),transparent 66%)}
+
+  /* 9 · the 3 step cards always stack: nothing can be pushed off the right edge */
+  .steps-row{grid-template-columns:1fr;gap:14px}
+  .step-card::after{display:none}
+
+  /* 10 · no word can push past the screen edge */
+  .step-card p,.ch-card p,.hero-sub,.note,.stat .l,.sc-code,.sc-btn{overflow-wrap:anywhere}
+}
+@keyframes flareGoM{0%{opacity:0;transform:scale(.05)}9%{opacity:1}40%{opacity:.92}70%{opacity:.5}100%{opacity:0;transform:scale(16)}}
+
+/* ── reduced motion ─────────────────────────────────────── */
+@media(prefers-reduced-motion:reduce){
+  .code-chip,.scroll-cue,.kicker,.hero-sub,.btn{animation:none !important;opacity:1 !important;transform:none !important}
+  h1 .l2{animation:none !important;opacity:1 !important}
+    }
+
+
+
+/* ══════════ SINGLE CTA: ANIMATED CODE CHIP + GET $100 ══════════ */
+.code-chip{position:relative;overflow:hidden}
+.code-chip::after{content:"";position:absolute;top:0;left:-45%;width:38%;height:100%;pointer-events:none;
+  background:linear-gradient(100deg,transparent,rgba(196,181,253,.22),transparent);transform:skewX(-18deg);
+  animation:chipSweep 3.8s ease-in-out infinite}
+@keyframes chipSweep{0%{left:-45%}55%,100%{left:128%}}
+.copy-btn{animation:copyPulse 2.9s ease-in-out infinite}
+@keyframes copyPulse{
+  0%,100%{box-shadow:0 10px 24px -12px rgba(124,58,237,.9)}
+  50%{box-shadow:0 12px 32px -8px rgba(124,58,237,1),0 0 0 7px rgba(124,58,237,.13)}}
+.copy-btn.copied{animation:none}
+/* the one big button gets a slow periodic sheen */
+.btn-shine::after{animation:btnShine 5.2s ease-in-out infinite}
+@keyframes btnShine{0%{left:-80%}40%,100%{left:130%}}
+.hero .code-chip{width:100%;max-width:540px;justify-content:space-between}
+.hero .cta-row{max-width:540px}
+.hero .cta-row .btn{width:100%;justify-content:center;font-size:18px;padding:26px 46px}
+.hero .cta-row .btn svg{width:23px;height:23px}
+#cta .cta-row .btn{font-size:18px;padding:24px 50px}
+#cta .cta-row .btn svg{width:23px;height:23px}
+#cta .code-chip{max-width:none}
+#cta .code-chip{margin-bottom:26px}
+#cta .copy-btn{background:linear-gradient(120deg,#22D3EE,#0891B2);color:#04121B;animation:none;box-shadow:0 10px 26px -12px rgba(34,211,238,.9)}
+#cta .copy-btn:hover{box-shadow:0 14px 32px -10px rgba(34,211,238,1)}
+#cta .copy-btn.copied{background:linear-gradient(120deg,#A78BFA,#7C3AED);color:#fff}
+
+/* mono theme variants */
+  
+
+@media(prefers-reduced-motion:reduce){
+  .copy-btn,.btn-shine::after,.code-chip::after{animation:none !important}
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   PHONE-FIRST PREMIUM PASS  (≤768px)
+   ══════════════════════════════════════════════════════════════════ */
+*{-webkit-tap-highlight-color:transparent}
+html{scroll-padding-top:86px}
+.btn:active{transform:translateY(1px) scale(.986)}
+.copy-btn:active,.sc-code:active{transform:scale(.96)}
+
+/* ── sticky action bar ───────────────────────────────────── */
+.sticky-cta{position:fixed;left:10px;right:10px;bottom:calc(12px + env(safe-area-inset-bottom));
+  z-index:118;display:none;align-items:stretch;gap:10px;padding:11px;border-radius:22px;
+  background:linear-gradient(120deg,rgba(26,18,74,.96),rgba(9,8,28,.96));
+  border:1px solid rgba(167,139,250,.3);backdrop-filter:blur(14px);
+  box-shadow:0 22px 60px -22px #000,0 0 46px -22px rgba(124,58,237,.85);
+  opacity:0;transform:translateY(150%);transition:transform .5s var(--ease),opacity .35s var(--ease)}
+.sticky-cta.show{opacity:1;transform:none}
+.sc-code{font-family:var(--font);flex:none;display:inline-flex;align-items:center;justify-content:center;text-align:center;
+  cursor:pointer;border:1px dashed rgba(167,139,250,.5);
+  background:rgba(124,58,237,.2);color:#F1EEFF;font-weight:800;font-size:13px;letter-spacing:.1em;
+  text-transform:uppercase;padding:20px 16px;border-radius:16px;transition:all .3s var(--ease);
+  box-shadow:0 10px 26px -14px rgba(124,58,237,.9)}
+.sc-btn{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:11px;color:#fff;
+  background:linear-gradient(120deg,#7C3AED,#4F46E5 60%,#312E81);font-weight:800;font-size:17.5px;
+  letter-spacing:.04em;text-transform:uppercase;padding:20px 22px;border-radius:16px;
+  box-shadow:0 18px 42px -16px rgba(124,58,237,1),inset 0 1px 0 rgba(255,255,255,.22);transition:transform .25s var(--ease)}
+.sc-btn svg{width:22px;height:22px}
+
+@media(max-width:768px){
+  .sticky-cta{display:flex}
+  #topBtn{display:none}
+  body{padding-bottom:126px}
+}
+
+/* ── phones ──────────────────────────────────────────────── */
+@media(max-width:600px){
+  nav{padding:12px 16px}
+  nav.scrolled{padding:10px 16px}
+  .logo{gap:9px}
+  .logo-mark{width:26px;height:26px}
+  .logo .txt b{font-size:13px;letter-spacing:.05em}
+  .nav-cta{font-size:9.5px;letter-spacing:.09em;padding:11px 15px}
+
+  section{padding:50px 0}
+  .stats-band{padding-bottom:24px}
+  .sec-head{margin-bottom:30px}
+  .sec-head .chip{padding:7px 15px;font-size:10px;letter-spacing:.28em}
+  .sec-head h2{font-size:27px;letter-spacing:-.4px}
+  .sec-head p{font-size:14px;margin-top:11px}
+
+  .hero{padding:94px 18px 46px;gap:4px}
+  .kicker{margin-bottom:22px;font-size:10px;letter-spacing:.2em;padding:8px 15px}
+  .hero h1{font-size:clamp(42px,12.6vw,64px);margin-bottom:20px;letter-spacing:-.5px}
+  .hero-sub{font-size:15.5px;line-height:1.62;margin-bottom:10px}
+  .code-chip{width:100%;max-width:none;justify-content:space-between;padding:14px 14px 14px 20px;border-radius:19px;margin-bottom:22px}
+  .code-chip small{font-size:10px;letter-spacing:.22em}
+  .code-chip b{font-size:25px;letter-spacing:.2em}
+  .copy-btn{padding:21px 26px;font-size:12px;letter-spacing:.14em}
+  .hero .cta-row{gap:0}
+  .hero .cta-row .btn{width:100%;max-width:none;justify-content:center;padding:25px 26px;font-size:17px;letter-spacing:.04em}
+  .hero .cta-row .btn svg{width:23px;height:23px}
+  .scroll-cue{margin-top:28px;font-size:9.5px;letter-spacing:.22em;gap:11px}
+  .scroll-cue .mouse{width:18px;height:28px}
+
+  .hero-moon{min-height:372px;margin-top:24px}
+  .moon{width:min(268px,68vw)}
+  .moon-badge{right:3%;top:7%;padding:11px 15px;border-radius:15px}
+  .moon-badge small{font-size:8.5px;letter-spacing:.22em}
+  .moon-badge b{font-size:21px}
+  .float-doodle{width:40px;height:40px}
+
+  .ch-grid{gap:11px}
+  .ch-card{display:grid;grid-template-columns:54px 1fr;column-gap:15px;row-gap:0;
+    align-items:start;padding:19px 17px;border-radius:18px}
+  .ch-card .no{grid-row:1/span 3;font-size:38px;line-height:.9;padding-top:1px;-webkit-text-stroke:1.4px var(--violet-lt)}
+  .ch-card h3{margin:0 0 3px;font-size:15.5px;line-height:1.25}
+  .ch-card h3 .k-sub{font-size:10.5px;letter-spacing:.09em;margin-top:2px}
+  .ch-card p{font-size:13px;line-height:1.55}
+  .ch-card .badge{margin-top:9px;justify-self:start;padding:6px 12px;font-size:9.5px;letter-spacing:.18em}
+
+  .stats{grid-template-columns:repeat(2,1fr);gap:11px}
+  .stat{padding:22px 10px;border-radius:18px}
+  .stat .v{font-size:clamp(27px,9vw,36px)}
+  .stat .l{font-size:10px;letter-spacing:.12em;margin-top:6px}
+
+  .steps-row{gap:11px}
+  .step-card{display:grid;grid-template-columns:52px 1fr;column-gap:15px;padding:19px 17px;border-radius:18px}
+  .step-card .no{grid-row:1/span 2;font-size:36px;line-height:.95;padding-top:1px;-webkit-text-stroke:1.4px var(--violet-lt)}
+  .step-card h3{margin:0 0 4px;font-size:14.5px}
+  .step-card p{font-size:13px;line-height:1.55}
+  .note{margin-top:26px;font-size:11.5px;line-height:1.65}
+
+  .quote-band{padding:22px 0}
+  .big-quote{padding:32px 20px;border-radius:22px}
+  .big-quote p{font-size:19.5px;line-height:1.42}
+  .big-quote::before{font-size:82px;top:-9px}
+  .big-quote .by{font-size:10px;letter-spacing:.3em;margin-top:14px}
+
+  .community{padding:34px 18px;border-radius:22px}
+  .community h2{font-size:23px}
+  .community p{font-size:14.5px;line-height:1.6}
+  .community .cta-row{gap:10px;margin-top:24px}
+  .community .btn{width:100%;justify-content:center;padding:16px 20px;font-size:13.5px}
+
+  #cta{padding:72px 0 78px}
+  #cta h2{font-size:31px;letter-spacing:-.6px}
+  #cta p{font-size:15px;margin-bottom:32px}
+  #cta .code-chip{margin-bottom:20px}
+  #cta .cta-row .btn{width:100%;justify-content:center;padding:25px 26px;font-size:17px}
+  #cta .cta-row .btn svg{width:21px;height:21px}
+
+  footer{padding:34px 0}
+  .foot{flex-direction:column;align-items:flex-start;gap:10px;text-align:left}
+  .foot .m{font-size:15px}
+  .foot .fine{font-size:11.5px;line-height:1.6}
+}
+
+@media(max-width:380px){
+  .hero{padding:90px 15px 42px}
+  .hero h1{font-size:clamp(38px,12.4vw,46px)}
+  .ch-card,.step-card{grid-template-columns:48px 1fr;column-gap:13px}
+  .ch-card .no,.step-card .no{font-size:33px}
+  .sc-code{font-size:11.5px;padding:18px 12px;letter-spacing:.06em}
+  .sc-btn{font-size:15.5px;padding:18px 16px;gap:9px}
+  .sc-btn svg{width:20px;height:20px}
+  .hero .cta-row .btn{padding:20px 20px;font-size:15px}
+}
+
+@media(max-width:900px) and (max-height:500px){
+  .hero{min-height:auto;padding-top:82px;padding-bottom:36px}
+  .hero-moon{min-height:300px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .sticky-cta{transition:none}
+  .sticky-cta.show{transform:none}
+}
+
+/* ══════════ OPENING SEQUENCE: black stage -> light burst -> glowing reveal ══════════ */
+html.intro,html.intro body{overflow:hidden}
+#loader{z-index:300;background:#000;transition:opacity .34s ease,visibility .34s ease;cursor:pointer;
+  animation:loaderFallback 3.2s ease forwards}      /* no-JS safety net */
+@keyframes loaderFallback{0%,86%{opacity:1}100%{opacity:0;visibility:hidden}}
+#loader::before{display:none}
+.intro-stage{position:relative;z-index:2;width:min(540px,88vw);display:flex;flex-direction:column;gap:18px;
+  opacity:0;animation:introIn .9s var(--ease) .25s forwards}
+@keyframes introIn{from{opacity:0;transform:scale(.93) translateY(16px)}to{opacity:1;transform:none}}
+#loader .code-chip{margin:0;width:100%;justify-content:space-between;opacity:1;animation:none;pointer-events:none}
+#loader .copy-btn{pointer-events:none}
+#loader .btn{width:100%;justify-content:center;font-size:18px;padding:26px 46px;opacity:1;
+  pointer-events:none;animation:btnBreath 2.8s ease-in-out .9s infinite}
+#loader .btn svg{width:23px;height:23px}
+@keyframes btnBreath{0%,100%{box-shadow:0 18px 48px -14px rgba(124,58,237,.8)}
+  50%{box-shadow:0 24px 64px -12px rgba(124,58,237,1),0 0 66px -10px rgba(34,211,238,.45)}}
+/* the light that leaves the button and floods the screen */
+#flare{position:fixed;left:var(--bx,50%);top:var(--by,56%);z-index:296;width:130px;height:130px;margin:-65px 0 0 -65px;
+  border-radius:50%;pointer-events:none;opacity:0;transform:scale(.04);will-change:transform,opacity;filter:blur(2px);
+  background:radial-gradient(circle,#fff 0%,#FFF7FF 12%,#E9D5FF 26%,rgba(167,139,250,.85) 42%,rgba(124,58,237,.45) 60%,rgba(49,46,129,.18) 76%,transparent 88%)}
+#flare.play{animation:flareGo 1.45s cubic-bezier(.12,.72,.25,1) forwards}
+@keyframes flareGo{0%{opacity:0;transform:scale(.04)}8%{opacity:1}38%{opacity:.95}68%{opacity:.55}100%{opacity:0;transform:scale(24)}}
+#flare.done{display:none}
+#loader.go{animation:none}          /* cancel the no-JS fallback once JS drives the reveal */
+#loader.done{animation:none}
+#loader.go .intro-stage{animation:introPop .5s ease forwards}
+@keyframes introPop{to{transform:scale(1.045);filter:brightness(1.4)}}
+/* the light washing over the revealed site */
+#glow{position:fixed;inset:0;z-index:290;pointer-events:none;opacity:0;transform-origin:50% 55%;
+  background:
+    radial-gradient(closest-side at 50% 55%,#fff 0%,rgba(237,233,254,.92) 16%,rgba(139,92,246,.5) 40%,transparent 74%),
+    radial-gradient(circle at 50% 55%,rgba(34,211,238,.34),transparent 58%)}
+#glow.play{animation:siteGlow 1.9s ease-out forwards}
+@keyframes siteGlow{0%{opacity:0;transform:scale(.45)}13%{opacity:.95}45%{opacity:.5}100%{opacity:0;transform:scale(2.2)}}
+#glow.done{display:none}
+/* after the burst: the whole site glows, then the light sweeps down the page */
+#afterglow{position:fixed;inset:0;z-index:288;pointer-events:none;overflow:hidden}
+#afterglow::before{content:"";position:absolute;inset:0;opacity:0;
+  background:radial-gradient(ellipse at 50% 45%,rgba(237,233,254,.30) 0%,rgba(139,92,246,.22) 42%,rgba(124,58,237,.12) 68%,transparent 88%)}
+#afterglow.play::before{animation:siteBloom 1.9s ease-out .1s forwards}
+@keyframes siteBloom{0%{opacity:0}22%{opacity:1}60%{opacity:.55}100%{opacity:0}}
+#afterglow::after{content:"";position:absolute;left:-10%;right:-10%;top:-60%;height:70%;opacity:0;
+  background:linear-gradient(180deg,transparent,rgba(255,255,255,.16) 45%,rgba(196,181,253,.22) 60%,transparent);
+  filter:blur(14px)}
+#afterglow.play::after{animation:lightSweep 1.5s cubic-bezier(.3,.7,.3,1) .25s forwards}
+@keyframes lightSweep{0%{opacity:0;top:-60%}12%{opacity:1}100%{opacity:0;top:150%}}
+#afterglow.done{display:none}
+/* hold the hero entrance until the reveal, then let it play into the glow */
+html.intro .hero .ch,html.intro .kicker,html.intro .hero-sub,
+html.intro .hero .code-chip,html.intro .hero .cta-row .btn,html.intro .scroll-cue{animation-play-state:paused}
+
+@media(max-width:600px){
+  .intro-stage{width:min(100%,88vw);gap:14px}
+  #loader .code-chip{padding:14px 14px 14px 20px}
+  #loader .code-chip b{font-size:25px}
+  #loader .btn{font-size:17px;padding:25px 26px}
+  .burst{bottom:39px}
+}
+@media(prefers-reduced-motion:reduce){
+  .intro-stage{animation:none;opacity:1;transform:none}
+  #loader{animation:none;transition:none}
+  #flare.play,#glow.play,#afterglow.play::before,#afterglow.play::after{animation:none}
+}
+</style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2529903790851977');
+fbq('track', 'PageView');
+</script>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2529903790851977&ev=PageView&noscript=1"
+/></noscript>
+
+<div id="loader">
+  <div class="intro-stage">
+    <div class="code-chip"><small>Use code</small><b>S4H</b><button class="copy-btn" type="button" tabindex="-1" aria-hidden="true">Copy</button></div>
+    <a class="btn btn-buy btn-shine" href="https://moon.com/?c=soul4hunt&amp;offer=soul4hunt" tabindex="-1" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v8.5H4V12"/><path d="M2.5 7.5h19V12h-19z"/><path d="M12 20.5V7.5"/><path d="M12 7.5S10.3 3 7.8 3a2.4 2.4 0 0 0 0 4.5H12zm0 0S13.7 3 16.2 3a2.4 2.4 0 0 1 0 4.5H12z"/></svg> Get $100</a>
+  </div>
+</div>
+<div id="flare" aria-hidden="true"></div>
+<div id="glow" aria-hidden="true"></div>
+<div id="afterglow" aria-hidden="true"></div>
+<div id="progress"><i></i></div>
+<canvas id="particles"></canvas>
+<div class="aurora"><div class="orb orb-1"></div><div class="orb orb-2"></div></div>
+<div id="doodles"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<nav id="navbar">
+  <a class="logo" href="#top"><svg class="logo-mark" viewBox="0 0 100 100" aria-hidden="true">
+<defs>
+<linearGradient id="nava" x1="18" y1="92" x2="88" y2="4" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#A855F7"/><stop offset=".3" stop-color="#6D28D9"/><stop offset=".58" stop-color="#4F46E5"/><stop offset=".8" stop-color="#3B82F6"/><stop offset="1" stop-color="#22D3EE"/></linearGradient>
+<linearGradient id="navb" x1="74" y1="4" x2="24" y2="94" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#38BDF8"/><stop offset=".34" stop-color="#4F46E5"/><stop offset=".68" stop-color="#7C3AED"/><stop offset="1" stop-color="#A855F7"/></linearGradient>
+
+</defs>
+<g transform="translate(50 50) scale(0.74 1) translate(-50 -50)">
+<path d="M88 3Q46 14 8 39Q1.5 46 8 53Q46 78 40 84L47.5 61L47.5 53L41.5 45Z" fill="url(#navb)"/>
+<path d="M88 3Q46 14 8 39Q1.5 46 8 53Q46 78 40 84L47.5 61L47.5 53L41.5 45Z" transform="rotate(180 50 50) translate(3.5 3.5) scale(0.93)" fill="url(#nava)"/>
+<path d="M41.6 45.2L47.4 53L47.4 61" fill="none" stroke="#070620" stroke-width="2.4" stroke-linecap="round" opacity=".85"/>
+
+</g></svg><span class="txt"><b>SOUL<em>4</em>HUNTS</b><small>Moon.com × S4H Exclusive</small></span></a>
+  <div class="nav-right">
+        <a class="nav-cta" href="https://moon.com/?c=soul4hunt&amp;offer=soul4hunt" target="_blank" rel="noopener sponsored">Join Moon.com &rarr;</a>
+  </div>
+</nav>
+
+<!-- ══════════ HERO ══════════ -->
+<header class="hero" id="top">
+  <div id="spotlight"></div>
+  <div class="hero-copy">
+    <div class="kicker"><i></i>S4H Exclusive &middot; Sign-Up Offer</div>
+    <h1><span class="l1" data-split>Moon.com</span><br><span class="l2">$100 Bonus</span></h1>
+    <p class="hero-sub">Join Moon.com through Soul4Hunts and use our exclusive code to unlock the available sign-up bonus, level-up rewards and weekly perks &mdash; all with one simple code: <strong>S4H</strong>.</p>
+
+    <!-- 🔗 Live links — swap the Moon.com offer URL here if it ever changes:
+         https://moon.com/?c=soul4hunt&amp;offer=soul4hunt
+         Socials live in the #community panel (Discord / YouTube / Instagram). -->
+    <div class="code-chip">
+      <small>Use code</small><b>S4H</b>
+      <button class="copy-btn" type="button" data-copy="S4H" data-label="Copy">Copy</button>
+    </div>
+
+    <div class="cta-row">
+      <a class="btn btn-buy magnetic btn-shine" href="https://moon.com/?c=soul4hunt&amp;offer=soul4hunt" target="_blank" rel="noopener sponsored">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v8.5H4V12"/><path d="M2.5 7.5h19V12h-19z"/><path d="M12 20.5V7.5"/><path d="M12 7.5S10.3 3 7.8 3a2.4 2.4 0 0 0 0 4.5H12zm0 0S13.7 3 16.2 3a2.4 2.4 0 0 1 0 4.5H12z"/></svg>
+        Get $100
+      </a>
+    </div>
+
+    <a class="scroll-cue" href="#bonuses"><span class="mouse"></span>See the bonuses</a>
+  </div>
+
+  <!-- ══════════ 3D MOON ══════════ -->
+  <div class="hero-moon" id="moonZone">
+    <div class="moon-stars" id="moonStars" aria-hidden="true"></div>
+    <div class="orbit"></div>
+    <div class="orbit o2"></div>
+
+    <svg class="float-doodle" style="left:4%;top:11%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5c2.6 2.3 4 5.5 4 9.4l2.4 3.6-3.6-.6-2.8 6-2.8-6-3.6.6L8 11.9c0-3.9 1.4-7.1 4-9.4z"/><circle cx="12" cy="9" r="1.8"/></svg>
+    <svg class="float-doodle" style="right:4%;top:26%;animation-delay:1.4s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 21V4"/><path d="M6 5h11l-2.4 3.4L17 12H6z"/><path d="M3.5 21h5"/></svg>
+    <svg class="float-doodle" style="left:9%;bottom:12%;animation-delay:2.6s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 6.2L20 11l-6.2 1.8L12 19l-1.8-6.2L4 11l6.2-1.8z"/></svg>
+
+    <div class="moon-float" aria-hidden="true">
+      <div class="moon" id="moon3d">
+        <span class="mare" style="left:6%;top:12%;width:52%"></span>
+        <span class="mare" style="left:48%;top:52%;width:44%"></span>
+        <span class="crater" style="left:22%;top:24%;width:19%"></span>
+        <span class="crater" style="left:52%;top:14%;width:12%"></span>
+        <span class="crater" style="left:70%;top:34%;width:22%"></span>
+        <span class="crater" style="left:34%;top:52%;width:13%"></span>
+        <span class="crater" style="left:12%;top:62%;width:16%"></span>
+        <span class="crater" style="left:52%;top:70%;width:15%"></span>
+        <span class="crater" style="left:76%;top:64%;width:10%"></span>
+        <span class="crater" style="left:40%;top:38%;width:7%"></span>
+        <span class="crater" style="left:63%;top:52%;width:6%"></span>
+        <span class="moon-grain"></span>
+        <span class="moon-shade"></span>
+      </div>
+    </div>
+
+    <div class="moon-badge"><small>Sign-Up Bonus</small><b>$100</b></div>
+    <div class="moon-shadow"></div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Use code S4H</span><span>$100 Sign-Up Bonus</span><span>Double Level-Up</span><span>Double Weekly Bonus</span><span>New Users Only</span><span>One Simple Code</span>
+    <span>Use code S4H</span><span>$100 Sign-Up Bonus</span><span>Double Level-Up</span><span>Double Weekly Bonus</span><span>New Users Only</span><span>One Simple Code</span>
+  </div>
+</div>
+
+<!-- ══════════ BONUSES ══════════ -->
+<section id="bonuses">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="chip">The S4H Offer</span>
+      <h2>Exclusive Bonuses</h2>
+      <p>Use code <b>S4H</b> during sign-up, then check the current eligibility and terms for each offer available to your account.</p>
+    </div>
+
+    <div class="ch-grid">
+      <div class="ch-card reveal" style="--d:0.00s">
+        <div class="no">01</div>
+        <h3>Free Bonus<br><span class="k-sub">$100 On Sign-Up</span></h3>
+        <p>Get the available $100 bonus when you join Moon.com through the S4H offer.</p>
+        <span class="badge sample">Featured</span>
+      </div>
+      <div class="ch-card reveal" style="--d:0.08s">
+        <div class="no">02</div>
+        <h3>Sign-Up Bonus</h3>
+        <p>Unlock the applicable sign-up reward available for new users.</p>
+        <span class="badge full">Terms Apply</span>
+      </div>
+      <div class="ch-card reveal" style="--d:0.16s">
+        <div class="no">03</div>
+        <h3>Double Level-Up</h3>
+        <p>Get access to the S4H promotional level-up benefit, where eligible.</p>
+        <span class="badge full">Terms Apply</span>
+      </div>
+      <div class="ch-card reveal" style="--d:0.00s">
+        <div class="no">04</div>
+        <h3>Double Weekly Bonus</h3>
+        <p>Receive the promotional weekly bonus available under the current offer.</p>
+        <span class="badge full">Terms Apply</span>
+      </div>
+      <div class="ch-card reveal" style="--d:0.08s">
+        <div class="no">05</div>
+        <h3>More Rewards</h3>
+        <p>Explore additional Moon.com rewards and promotional benefits.</p>
+        <span class="badge full">Terms Apply</span>
+      </div>
+      <div class="ch-card reveal" style="--d:0.16s">
+        <div class="no">06</div>
+        <h3>One Simple Code</h3>
+        <p>Use <b>S4H</b> during sign-up to connect your account with the offer.</p>
+        <span class="badge sample">S4H</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ STATS ══════════ -->
+<section class="stats-band" style="padding-top:20px">
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat reveal"><div class="v">$<span class="count" data-target="100">0</span></div><div class="l">Sign-Up Bonus</div></div>
+      <div class="stat reveal" style="--d:.08s"><div class="v"><span class="count" data-target="6">0</span></div><div class="l">Bonus Categories</div></div>
+      <div class="stat reveal" style="--d:.16s"><div class="v"><span class="count" data-target="3">0</span></div><div class="l">Steps to Join</div></div>
+      <div class="stat reveal" style="--d:.24s"><div class="v">S4H</div><div class="l">One Simple Code</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ HOW IT WORKS ══════════ -->
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="chip">How It Works</span>
+      <h2>Three Simple Steps</h2>
+      <p>Open an account, enter the code during sign-up, then check what your account is eligible for.</p>
+    </div>
+
+    <div class="steps-row">
+      <div class="step-card reveal" style="--d:0.00s">
+        <div class="no">01</div>
+        <h3>Open Moon.com</h3>
+        <p>Head to Moon.com through the button on this page and start creating your new account.</p>
+      </div>
+      <div class="step-card reveal" style="--d:0.10s">
+        <div class="no">02</div>
+        <h3>Use Code S4H</h3>
+        <p>Enter promo code <b>S4H</b> during the applicable sign-up process so your account is linked to the offer.</p>
+      </div>
+      <div class="step-card reveal" style="--d:0.20s">
+        <div class="no">03</div>
+        <h3>Claim Your Rewards</h3>
+        <p>Complete any required steps, then check which bonuses and rewards your account is eligible for.</p>
+      </div>
+    </div>
+
+    <p class="note reveal">Bonus amounts, eligibility and promotional terms are set by Moon.com and can change at any time. Please review Moon.com&rsquo;s official terms before participating. Offer intended for new users where available.</p>
+  </div>
+</section>
+
+<!-- ══════════ QUOTE ══════════ -->
+<section class="quote-band">
+  <div class="wrap">
+    <div class="big-quote reveal">
+      <p>One simple code &mdash; <strong>S4H</strong> &mdash; connects your account to the bonuses and rewards available to you.</p>
+      <div class="by">&mdash; Soul4Hunts &times; Moon.com</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ COMMUNITY ══════════ -->
+<section id="community">
+  <div class="wrap">
+    <div class="community reveal">
+      <span class="chip">Join the Community</span>
+      <h2>Stay connected with Soul4Hunts.</h2>
+      <p>Get updates, guides, announcements and community content through our social channels.</p>
+      <div class="cta-row">
+        <a class="btn btn-sample magnetic" href="https://discord.gg/soul4hunt" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.2 6.4A15 15 0 0 1 12 6c1.3 0 2.6.1 3.8.4"/><path d="M8.2 6.4C5.8 7 4 8.2 3.2 10c-1.1 2.6-1.3 5.3-.6 7.5 1.5 1 3 1.6 4.4 1.9l.9-1.6"/><path d="M15.8 6.4c2.4.6 4.2 1.8 5 3.6 1.1 2.6 1.3 5.3.6 7.5-1.5 1-3 1.6-4.4 1.9l-.9-1.6"/><path d="M9 15.5c.8-1 2-1.5 3-1.5s2.2.5 3 1.5"/><circle cx="9.3" cy="11.7" r="1.1"/><circle cx="14.7" cy="11.7" r="1.1"/></svg>
+          Discord
+        </a>
+        <a class="btn btn-sample magnetic" href="https://www.youtube.com/@Soulshunts" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.2 9.3v5.4l4.8-2.7z"/></svg>
+          YouTube
+        </a>
+        <a class="btn btn-sample magnetic" href="https://www.instagram.com/soul4hunts/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FINAL CTA ══════════ -->
+<section id="cta">
+  <div class="wrap">
+    <h2 class="reveal">Ready to get started?<br><em>Use code S4H.</em></h2>
+    <p class="reveal" style="--d:.1s">Create your Moon.com account, enter the code during sign-up, and check the <strong>bonuses available to your account</strong>.</p>
+    <div class="reveal" style="--d:.2s">
+      <div class="code-chip"><small>Use code</small><b>S4H</b><button class="copy-btn" type="button" data-copy="S4H" data-label="Copy">Copy</button></div>
+      <div class="cta-row">
+        <a class="btn btn-buy magnetic btn-shine" href="https://moon.com/?c=soul4hunt&amp;offer=soul4hunt" target="_blank" rel="noopener sponsored">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v8.5H4V12"/><path d="M2.5 7.5h19V12h-19z"/><path d="M12 20.5V7.5"/><path d="M12 7.5S10.3 3 7.8 3a2.4 2.4 0 0 0 0 4.5H12zm0 0S13.7 3 16.2 3a2.4 2.4 0 0 1 0 4.5H12z"/></svg>
+          Get $100
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sticky-cta" id="stickyCta">
+  <button class="sc-code" type="button" data-copy="S4H" data-label="Use code S4H">Use code S4H</button>
+  <a class="sc-btn" href="https://moon.com/?c=soul4hunt&amp;offer=soul4hunt" target="_blank" rel="noopener sponsored">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v8.5H4V12"/><path d="M2.5 7.5h19V12h-19z"/><path d="M12 20.5V7.5"/><path d="M12 7.5S10.3 3 7.8 3a2.4 2.4 0 0 0 0 4.5H12zm0 0S13.7 3 16.2 3a2.4 2.4 0 0 1 0 4.5H12z"/></svg>
+    Get $100
+  </a>
+</div>
+
+<button id="topBtn" type="button" aria-label="Back to top" title="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="M6 11l6-6 6 6"/></svg></button>
+
+<footer>
+  <div class="wrap foot">
+    <div class="m">Moon.com <span>&times; S4H</span></div>
+    <p class="fine">Soul4Hunts is an independent affiliate/promotional page and is not the official Moon.com website. Offers, eligibility and bonus terms may change. Please review Moon.com&rsquo;s official terms before participating. &nbsp;&middot;&nbsp; &copy; <span id="yr">2026</span></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.getElementById('yr').textContent = new Date().getFullYear();
+/* opening sequence: 4s on black -> burst from the button -> glowing reveal */
+const introEl = document.getElementById('loader'), glowEl = document.getElementById('glow'), flareEl = document.getElementById('flare'), afterEl = document.getElementById('afterglow');
+let revealed = false;
+function reveal(){
+  if (revealed) return;
+  revealed = true;
+  /* aim the light at the exact centre of the loading-screen button */
+  const src = introEl.querySelector('.btn-buy') || introEl;
+  const r = src.getBoundingClientRect();
+  flareEl.style.setProperty('--bx', (r.left + r.width / 2) + 'px');
+  flareEl.style.setProperty('--by', (r.top + r.height / 2) + 'px');
+  introEl.classList.add('go');
+  flareEl.classList.add('play');
+  document.documentElement.classList.remove('intro');   /* hero entrance starts playing */
+  setTimeout(() => glowEl.classList.add('play'), reduce ? 0 : 140);   /* wash follows the flare */
+  setTimeout(() => introEl.classList.add('done'), reduce ? 0 : 180);  /* black lifts into the light */
+  setTimeout(() => afterEl.classList.add('play'), reduce ? 0 : 200);   /* the site itself starts to glow */
+  setTimeout(() => { glowEl.classList.add('done'); flareEl.classList.add('done'); afterEl.classList.add('done'); }, reduce ? 0 : 2100);
+}
+if (reduce){ reveal(); }
+else {
+  setTimeout(reveal, 2000);
+  introEl.addEventListener('click', reveal);
+  introEl.addEventListener('touchstart', reveal, {passive:true});
+}
+
+/* progress + nav + back-to-top */
+const prog = document.querySelector('#progress i'), nav = document.getElementById('navbar'), topBtn = document.getElementById('topBtn');
+addEventListener('scroll', () => {
+  const h = document.documentElement;
+  prog.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
+  nav.classList.toggle('scrolled', h.scrollTop > 40);
+  topBtn.classList.toggle('show', h.scrollTop > 620);
+}, {passive:true});
+topBtn.addEventListener('click', () => scrollTo({top:0, behavior: reduce ? 'auto' : 'smooth'}));
+
+/* letter-split hero title */
+document.querySelectorAll('[data-split]').forEach(el => {
+  const txt = el.textContent; el.textContent = '';
+  [...txt].forEach((c, i) => {
+    const s = document.createElement('span');
+    s.className = 'ch'; s.style.setProperty('--i', i);
+    s.textContent = c === ' ' ? '\u00A0' : c;
+    el.appendChild(s);
+  });
+});
+
+/* reveals */
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); } }), {threshold:.15, rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+/* counters */
+function count(el){
+  const t = parseFloat(el.dataset.target), dur = 1800, t0 = performance.now();
+  if (reduce){ el.textContent = t; return; }
+  (function step(n){ const p = Math.min((n - t0)/dur, 1), e = 1 - Math.pow(1-p, 4);
+    el.textContent = Math.round(t*e); if (p < 1) requestAnimationFrame(step); })(t0);
+}
+const cio = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ count(e.target); cio.unobserve(e.target); } }), {threshold:.6});
+document.querySelectorAll('.count').forEach(el => cio.observe(el));
+
+/* moon tilt + hero spotlight */
+const zone = document.getElementById('moonZone'), moon = document.getElementById('moon3d'), spot = document.getElementById('spotlight');
+if (!reduce && matchMedia('(hover:hover)').matches){
+  zone.addEventListener('mousemove', e => {
+    const r = zone.getBoundingClientRect();
+    const x = (e.clientX - r.left)/r.width - .5, y = (e.clientY - r.top)/r.height - .5;
+    moon.style.setProperty('--ry', (x * 20) + 'deg');
+    moon.style.setProperty('--rx', (-y * 12) + 'deg');
+  });
+  zone.addEventListener('mouseleave', () => { moon.style.setProperty('--ry','0deg'); moon.style.setProperty('--rx','0deg'); });
+  document.querySelector('.hero').addEventListener('mousemove', e => {
+    spot.style.setProperty('--mx', (e.clientX / innerWidth * 100) + '%');
+    spot.style.setProperty('--my', (e.clientY / innerHeight * 100) + '%');
+  });
+}
+
+/* magnetic buttons */
+if (!reduce && matchMedia('(hover:hover)').matches){
+  document.querySelectorAll('.magnetic').forEach(b => {
+    b.addEventListener('mousemove', e => {
+      const r = b.getBoundingClientRect();
+      const x = e.clientX - r.left - r.width/2, y = e.clientY - r.top - r.height/2;
+      b.style.transform = 'translate(' + x*.18 + 'px,' + (y*.28 - 3) + 'px)';
+    });
+    b.addEventListener('mouseleave', () => { b.style.transform = ''; });
+  });
+}
+
+/* hero star field */
+const stars = document.getElementById('moonStars');
+if (stars){
+  const n = innerWidth < 700 ? 20 : 34;
+  for (let i = 0; i < n; i++){
+    const s = document.createElement('span');
+    s.className = Math.random() < .3 ? 'star c' : 'star';
+    s.style.left = (Math.random()*100) + '%';
+    s.style.top = (Math.random()*100) + '%';
+    const sz = (Math.random()*2.2 + 1.2).toFixed(1);
+    s.style.width = sz + 'px'; s.style.height = sz + 'px';
+    s.style.opacity = (Math.random()*.5 + .35).toFixed(2);
+    s.style.animationDelay = (Math.random()*4).toFixed(2) + 's';
+    stars.appendChild(s);
+  }
+}
+
+/* copy code S4H */
+let toastTimer;
+function toast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2200);
+}
+function fallbackCopy(text){
+  const ta = document.createElement('textarea');
+  ta.value = text; ta.setAttribute('readonly',''); ta.style.position = 'fixed'; ta.style.top = '-1000px';
+  document.body.appendChild(ta); ta.select();
+  let ok = false;
+  try { ok = document.execCommand('copy'); } catch(e){ ok = false; }
+  document.body.removeChild(ta);
+  return ok;
+}
+document.querySelectorAll('[data-copy]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const txt = btn.getAttribute('data-copy');
+    const done = ok => {
+      toast(ok ? 'Code S4H copied — paste at sign-up' : 'Copy failed — code is S4H');
+      if (!ok) return;
+      btn.classList.add('copied');
+      setTimeout(() => btn.classList.remove('copied'), 1800);
+      if (!btn.hasAttribute('data-icon') && btn.dataset.label){
+        const old = btn.dataset.label;
+        btn.textContent = 'Copied \u2713';
+        setTimeout(() => { btn.textContent = old; }, 1800);
+      }
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(txt).then(() => done(true), () => done(fallbackCopy(txt)));
+    } else { done(fallbackCopy(txt)); }
+  });
+});
+
+/* theme toggle */
+const PC = '124,58,237';   /* particle colour: theme violet */
+
+/* moon dust particles */
+const cv = document.getElementById('particles'), cx = cv.getContext('2d');
+let W, H, P = [], dpr = Math.min(devicePixelRatio || 1, 2);
+function size(){ W = cv.width = innerWidth*dpr; H = cv.height = innerHeight*dpr; cv.style.width = innerWidth+'px'; cv.style.height = innerHeight+'px'; }
+function init(){ const n = innerWidth < 700 ? 30 : 60;
+  P = Array.from({length:n}, () => ({ x:Math.random()*W, y:Math.random()*H, r:(Math.random()*1.7+.4)*dpr,
+    vy:-(Math.random()*.25+.06)*dpr, vx:(Math.random()-.5)*.12*dpr, a:Math.random()*.45+.12, tw:Math.random()*6.28, ts:Math.random()*.02+.005 })); }
+function draw(){ cx.clearRect(0,0,W,H);
+  for (const p of P){ p.x+=p.vx; p.y+=p.vy; p.tw+=p.ts;
+    if (p.y < -10){ p.y = H+10; p.x = Math.random()*W; }
+    if (p.x < -10) p.x = W+10; if (p.x > W+10) p.x = -10;
+    cx.beginPath(); cx.arc(p.x, p.y, p.r, 0, 6.283);
+    cx.fillStyle = 'rgba(' + PC + ',' + (p.a*(0.55+0.45*Math.sin(p.tw))).toFixed(3) + ')';
+    cx.shadowColor = 'rgba(' + PC + ',.45)'; cx.shadowBlur = 6*dpr; cx.fill(); cx.shadowBlur = 0; }
+  requestAnimationFrame(draw); }
+if (!reduce && cx){ size(); init(); draw(); addEventListener('resize', () => { size(); init(); }); }
+
+/* sticky mobile action bar: shows past the hero, hides at the final CTA */
+const stickyBar = document.getElementById('stickyCta'), endSec = document.getElementById('cta');
+if (stickyBar && endSec){
+  let endVisible = false;
+  const sio = new IntersectionObserver(es => { endVisible = es[0].isIntersecting; sync(); }, {threshold:.12});
+  sio.observe(endSec);
+  function sync(){ stickyBar.classList.toggle('show', !endVisible && innerHeight * .8 < scrollY); }
+  addEventListener('scroll', sync, {passive:true});
+  addEventListener('resize', sync);
+  sync();
+}
+})();
+</script>
+</body>
+</html>
